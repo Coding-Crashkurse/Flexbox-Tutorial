@@ -1,0 +1,107 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h2 {
+  font-size: 34px;
+}
+
+h4 {
+  font-size: 23px;
+  margin: 24px 0;
+}
+
+#landing {
+  background: url("images/background.jpg") center center;
+  height: 100vh;
+  background-size: cover;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+
+.nav .navbar {
+  display: flex;
+}
+
+.nav .navbar li {
+  list-style: none;
+  font-size: 24px;
+}
+
+.nav .navbar li a {
+  text-decoration: none;
+  color: white;
+  padding: 20px;
+}
+
+.cards {
+  margin-top: 40%;
+  display: flex;
+  max-width: 1200px;
+}
+
+.cards .card {
+  padding: 40px;
+  font-size: 22px;
+  line-height: 1.5;
+  background: white;
+  color: #191919;
+  margin: 10px 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  transition: transform 0.2s ease-in;
+  text-align: center;
+}
+
+.cards .card:hover {
+  transform: translateY(-5px);
+}
+
+.cards .card .fa-code {
+  color: rgb(40, 71, 246);
+  font-size: 40px;
+}
+
+@media screen and (max-width: 800px) {
+  #landing {
+    height: auto;
+    padding-bottom: 100px;
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav .navbar {
+    margin-top: 20px;
+  }
+
+  .cards {
+    margin-top: 100px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 500px;
+    font-size: 12px;
+  }
+
+  .card p {
+    font-size: 20px;
+  }
+}
